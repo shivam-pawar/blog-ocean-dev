@@ -10,6 +10,7 @@ import BlogPage from "./components/Posts/BlogPage";
 import AppNavbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import BlogOne from "./components/Posts/BlogOne";
+import About from "./components/About";
 function clickEffect(e) {
   var clickDiv = document.createElement("div");
 
@@ -29,6 +30,7 @@ ReactDOM.render(
   <Router>
     <AppNavbar />
     <Route exact path="/" component={App}></Route>
+    <Route exact path="/about" component={About}></Route>
     <Route exact path="/blogs" component={BlogPage}></Route>
     <Route exact path="/blogs_new" component={BlogOne}></Route>
 
